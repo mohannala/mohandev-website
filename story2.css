@@ -1,0 +1,30 @@
+h1{
+    border: none;
+    color: rgb(24, 88, 153);
+    text-align: center;
+    
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 240px;
+}
+p{
+    color: purple;
+    text-align: center;
+}
+
+h5{
+    float: left;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    line-height: 2;
+    margin-left: 42%;
+    margin-top: 24px;
+    position: relative;
+    background-color: black;
+    background-size: 20%;
+    color: aquamarine;
+    text-align: center;
+}

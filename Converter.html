@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unit Converter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+
+</head>
+<body class="text">
+    <h1 class="title">Unit Converter</h1>
+    <style>
+        
+        .Type{
+            color: aqua;
+            background-color: black;
+            text-align: center;
+        }
+        .title{
+            color: tomato;
+            text-align: center;
+        }
+        .button{
+            background-color: brown;
+            color: white;
+            border-radius: 5px;
+        }
+        .button:hover{
+            color: brown;
+            background-color: white;
+            cursor: pointer;
+        }
+        .mohan{
+            color: blue;
+            text-align: center;
+            background-color: bisque;
+            position: absolute;
+            background-size: 20%;
+            line-height: 2;
+            margin-left: 30%;
+            margin-right: 30%;
+            font-size: 20px;
+            padding-left: 9px;
+            padding-top: 1px;
+            padding-bottom: 1px;
+            padding-right: 9px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+
+    <form style="text-align: center;">
+
+        <label class="Type" for="unitType">Select Unit Type:</label>
+        <select id="unitType" name="unitType">
+            <option value="inchesToCentimeters">Inches to Centimeters</option>
+            <option value="centimetersToInches">Centimeters to Inches</option>
+            <option value="feetToMeters">Feet to Meters</option>
+            <option value="metersToFeets">Meters To Feet</option>
+            <option value="poundsToKilograms">Pounds to Kilograms</option>
+            <option value="kilogramsToPounds">Kilograms To Pounds</option>
+            <option value="feetToInches">Feet To Inches</option>
+            <option value="feetToCentimeters">Feet To Centimeters</option>
+            <option value="dollarsToRupees"> Dollars To Rupees</option>
+            <option value="rupeesToDollars"> Rupees To Dollars</option>
+            <option value="acreToGunta">Acre To Gunta</option>
+            <option value="guntaToAcre">Gunta To Acre</option>
+            <option value="guntaToSqfeet">Gunta To SqFeet</option>
+            <option value="sqfeetToGunta">SqFeet To Gunta</option>
+        </select></br></br>
+
+        <label style="color: aqua; background-color: black;"  for="value">Enter Value:</label>
+        <input type="text" id="value" name="value" placeholder="Enter value"></br></br></br>
+        
+        <button class="button" type="button" onclick="convertUnit()">Convert</button>
+    </form>
+
+    <p class="mohan" id="result"></p>
+
+    <script>
+        function convertUnit() {
+            let unitType = document.getElementById('unitType').value;
+            let value = parseFloat(document.getElementById('value').value);
+            let result = 0;
+
+            switch (unitType) {
+                case "inchesToCentimeters":
+                    // 1 inch = 2.54 centimeters
+                    result = value * 2.54;
+                    break;
+                 case "centimetersToInches":
+                    // 1 centimeter = 0.3937 inch
+                    result = value * 0.3937;
+                    break;
+                case "feetToMeters":
+                    // 1 foot = 0.3048 meters
+                    result = value * 0.3048;
+                    break;
+                case "metersToFeets":
+                    // 1 meter = 3.2808 feets
+                    result = value * 3.2808;
+                    break;
+                case "poundsToKilograms":
+                    // 1 pound = 0.453592 kilograms
+                    result = value * 0.453592;
+                    break;
+                case "kilogramsToPounds":
+                    // 1 kilogram = 2.2046 pounds
+                    result = value * 2.2046;
+                    break;
+                case "feetToInches":
+                    // 1 feet = 12 inches
+                    result = value * 12;
+                    break; 
+                case "feetToCentimeters":
+                    // 1 feet = 30.48 centimeters
+                    result = value * 30.48;
+                    break;
+                case "dollarsToRupees":
+                    // 1 dollar = 83.31 rupees
+                    result = value * 83.31;
+                    break;
+                case "rupeesToDollars":
+                    // 1 rupees = 0.012 dollars
+                    result = value * 0.012;
+                    break;
+                case "acreToGunta":
+                    //1 acre = 40 guntas
+                    result = value * 40;
+                    break;
+                case "guntaToAcre":
+                    // 1 gunta = 0.025 acre
+                    result = value * 0.025;
+                    break;
+                case "guntaToSqfeet":
+                    // 1 gunta = 1089 sqfeet
+                    result = value * 1089;
+                    break;   
+                case "sqfeetToGunta":
+                    // 1 sqfeet = 0.00092 gunta
+                    result = value * 0.00092
+                    break;                 
+
+                default:
+                    document.getElementById('result').innerHTML = "Please select a valid unit conversion.";
+                    return;
+            }
+
+            document.getElementById('result').innerHTML = value + " " + unitType + " is equal to " + result.toFixed(2) + " in the converted unit.";
+        }
+    </script>
+</body>
+</html>

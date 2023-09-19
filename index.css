@@ -1,0 +1,94 @@
+h1{
+    color: violet;
+    text-align: center;
+}
+.mohan{
+    color: aqua;
+    background-color: aquamarine;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.mohan :hover{
+    color: blue;
+    background-color: aqua;
+}
+table{
+    align-content: center;
+}
+legend{
+    background-color: blueviolet;
+    color: wheat;
+
+}
+.Stories{
+    color: rgb(71, 170, 220);
+    text-align: center;
+    background-color: bisque;
+    position: absolute;
+    background-size: 20%;
+    line-height: 2;
+    margin-left: 48%;
+    margin-right: 30%;
+    font-size: 20px;
+    padding-left: 9px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-right: 9px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.Stories :hover{
+    cursor: pointer;
+    color: rgb(33, 69, 232);
+}
+.Quiz{
+    color: rgb(71, 170, 220);
+    text-align: center;
+    background-color: bisque;
+    position: absolute;
+    background-size: 20%;
+    line-height: 2;
+    margin-left: 48%;
+    margin-right: 30%;
+    font-size: 20px;
+    padding-left: 9px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-right: 9px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.NEWS{
+    color: rgb(71, 170, 220);
+    text-align: center;
+    background-color: bisque;
+    position: absolute;
+    background-size: 20%;
+    line-height: 2;
+    margin-left: 48%;
+    margin-right: 30%;
+    font-size: 20px;
+    padding-left: 9px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-right: 9px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.Converter{
+    color: rgb(71, 170, 220);
+    text-align: center;
+    background-color: bisque;
+    position: fixed;
+    background-size: 20%;
+    line-height: 2;
+    margin-left: 48%;
+    margin-right: 30%;
+    font-size: 20px;
+    padding-left: 9px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-right: 9px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.Converter :hover{
+color: rgb(33, 69, 232);
+opacity: 1;
+}
